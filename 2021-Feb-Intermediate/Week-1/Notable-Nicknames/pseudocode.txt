@@ -1,0 +1,13 @@
+BEGIN is_notable(name)
+    Let startingLetter = name[1] as uppercase
+    IF length of name > 5 AND startingLetter = "N" THEN
+        Return "That nickname is notable!"
+    ELSE
+        Return "That nickname is not so notable!"
+    ENDIF
+END is_notable
+
+BEGIN Main
+    Get name
+    Display is_notable(name)
+END Main

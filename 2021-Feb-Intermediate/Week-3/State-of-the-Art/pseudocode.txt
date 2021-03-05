@@ -1,0 +1,14 @@
+BEGIN main
+    FOR index = 1 TO 3 STEP 1
+        REPEAT
+            Get mag_name
+        UNTIL BinarySearch(mag_name as lowercase, "art") <> Error
+        Add mag_name to proposals
+    NEXT index
+
+    Let display = ""
+    FOR index = 1 TO length of proposals STEP 1
+        Let display = proposals[index] + display
+    NEXT index
+    Display "Proposals: " + display[2:]
+END main

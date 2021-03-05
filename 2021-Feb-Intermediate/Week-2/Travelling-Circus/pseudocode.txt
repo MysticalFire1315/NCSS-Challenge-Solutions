@@ -1,0 +1,34 @@
+BEGIN BinarySearch(Name, RequiredName)
+    Let Lower = 1
+    Let Upper = number of elements in the array
+    Let FoundIt = false
+    REPEAT
+        Let Middle = (Upper + Lower) / 2
+        Let Middle = integer part of Middle
+        IF RequiredName = Name (Middle) THEN
+            Let FoundIt = true
+            Let PositionFound = Middle
+        ELSE
+            IF RequiredName < Name (Middle) THEN
+                Let Upper = Middle – 1
+            ELSE
+                Let Lower = Middle + 1
+            ENDIF
+        ENDIF
+    UNTIL FoundIt OR Lower > Upper
+    IF FoundIt THEN
+        Display “Required name found at ” PositionFound
+    ELSE
+        Display “Required name ” RequiredName “ not found.”
+    ENDIF
+END BinarySearch
+
+BEGIN Main
+    Get country
+    Let found = BinarySearch(country)
+    IF found <> Error THEN
+        Display country + " is on the list!"
+    ELSE
+        Display "We will not be in " + country + " this time."
+    ENDIF
+END Main

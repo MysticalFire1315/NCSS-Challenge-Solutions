@@ -1,0 +1,13 @@
+BEGIN Main
+    Get animal
+    Get frequency
+    IF animal = animal as uppercase THEN
+        Display "Woah! No need to shout, you'll scare the animals!"
+    ENDIF
+
+    CASEWHERE frequency is
+        <1: Display "That's sad. No pet for you today."
+        =1: Display "Great, here's your " + animal as lowercase + "!"
+        >1: Display "Ok! " + frequency + animal as lowercase + "s coming right up!"
+    ENDCASE
+END Main

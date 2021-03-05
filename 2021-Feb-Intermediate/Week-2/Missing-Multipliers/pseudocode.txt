@@ -1,0 +1,8 @@
+BEGIN Main
+    Get table
+    Get step
+    FOR num = 3 TO 12 STEP step
+        Let multiple = table*num
+        Display table + " x [] = " + multiple
+    NEXT num
+END Main

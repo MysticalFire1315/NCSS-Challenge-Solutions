@@ -1,0 +1,28 @@
+BEGIN concatenate(array, joiner)
+    Let return_item = ""
+    FOR index = 1 TO length of array STEP 1
+        Let return_item = return_item + array[index] + joiner
+    NEXT index
+    extract from the 1st character (for length of array - length of joiner) from return_item into return_item
+    Return return_item
+END concatenate
+
+BEGIN main
+    Let joiner = ", "
+    Display "And the line up is: " + concatenate(racers, joiner)
+
+    Get sleep
+    Let found = false
+    FOR index = 1 TO length of racers STEP 1
+        IF sleep as lowercase = racers[index] as lowercase THEN
+            Display sleep + "has been disqualified!"
+            Let racers[index] = "Disqualified"
+            Let found = true
+        ENDIF
+    NEXT index
+    IF found = false THEN
+        Display "All snails still awake."
+    ENDIF
+
+    Display "Remaining racers: " + concatenate(racers, joiner)
+END main

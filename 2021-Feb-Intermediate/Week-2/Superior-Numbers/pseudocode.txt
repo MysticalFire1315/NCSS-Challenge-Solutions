@@ -1,0 +1,70 @@
+BEGIN Split_String(String)
+    Let index = 1
+    REPEAT
+        extract from the index(th) character from String into CheckLetter
+        IF CheckLetter = " " THEN
+            extract from the 1st character (for i-1 characters) from String into Words
+            extract from the (index+1)(th) character from String into String
+        ENDIF
+        Increment index
+    UNTIL index >= length of String
+    Return Words
+END Split_String
+
+BEGIN BinarySearch(Name, RequiredName)
+    Let Lower = 1
+    Let Upper = number of elements in the array
+    Let FoundIt = false
+    REPEAT
+        Let Middle = (Upper + Lower) / 2
+        Let Middle = integer part of Middle
+        IF RequiredName = Name (Middle) THEN
+            Let FoundIt = true
+            Let PositionFound = Middle
+        ELSE
+            IF RequiredName < Name (Middle) THEN
+                Let Upper = Middle – 1
+            ELSE
+                Let Lower = Middle + 1
+            ENDIF
+        ENDIF
+    UNTIL FoundIt OR Lower > Upper
+    IF FoundIt THEN
+        Display “Required name found at ” PositionFound
+    ELSE
+        Display “Required name ” RequiredName “ not found.”
+    ENDIF
+END BinarySearch
+
+BEGIN find_personality(number)
+    Let traits = ""
+    IF remainder of number/2 = 0 THEN
+        Let traits = traits + "odd "
+    ENDIF
+    IF number > 10000 THEN
+        Let traits = traits + "excessive "
+    ENDIF
+    Let found = BinarySearch(number, "3")
+    IF found <> Error THEN
+        Let traits = traits + "irksome "
+    ENDIF
+    Let found = BinarySearch(arrogant_numbers, number)
+    IF found <> Error THEN
+        Let traits = traits + "arrogant "
+    ENDIF
+    Return traits
+END find_personality
+
+BEGIN Main
+    Get num_list
+    Let num_list = Split_String(num_list)
+    Let dull = 0
+    FOR index = 1 TO length of num_list STEP 1
+        IF find_personality(num_list[index]) <> "" THEN
+            Display num_list[index] + "is an " + find_personality(num_list[index]) + "number."
+        ELSE
+            Increment dull
+        ENDIF
+    NEXT index
+    Display "Dull numbers: " + dull
+END Main

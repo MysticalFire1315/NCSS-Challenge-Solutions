@@ -1,0 +1,14 @@
+BEGIN Main
+    Get band
+    Get songList
+    Split songList into array separated by space
+
+    Display "Please welcome to the stage, " + band + "!"
+    Display "They will be playing..."
+
+    FOR index = 1 TO length of songList STEP 1
+        Display "🎵 " + songList[index]
+    NEXT index
+
+    Display "Give it up for " + band + "!"
+END Main

@@ -1,0 +1,10 @@
+BEGIN cups_to_grams(cups, density)
+    Return (cups*density) rounded to 1 decimal place
+END cups_to_grams
+
+BEGIN Main
+    Get food
+    Get cups
+    Get density
+    Display cups + " cups of " + food + " is " + cups_to_grams(cups, density) + " grams."
+END Main

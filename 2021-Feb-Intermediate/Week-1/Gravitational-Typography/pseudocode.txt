@@ -1,0 +1,8 @@
+BEGIN Main
+    Get word
+    FOR index = 1 TO length of word STEP 1
+        Let uppercase = word[index] as uppercase
+        Display uppercase
+    Next index
+    Display word as lowercase
+END Main

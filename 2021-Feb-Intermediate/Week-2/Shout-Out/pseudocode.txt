@@ -1,0 +1,26 @@
+BEGIN Split_String(String)
+    Let index = 1
+    REPEAT
+        extract from the index(th) character from String into CheckLetter
+        IF CheckLetter = " " THEN
+            extract from the 1st character (for i-1 characters) from String into Words
+            extract from the (index+1)(th) character from String into String
+        ENDIF
+        Increment index
+    UNTIL index >= length of String
+    Return Words
+END Split_String
+
+BEGIN Main
+    Get sentence
+    Let words = Split_String(sentence)
+
+    Let count = 0
+    FOR index = 0 TO length of words STEP 1
+        IF words[index] = words[index] as uppercase THEN
+            Increment count
+        ENDIF
+    NEXT index
+
+    Display "Number of shouted words: " + count
+END Main

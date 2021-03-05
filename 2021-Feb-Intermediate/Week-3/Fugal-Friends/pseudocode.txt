@@ -1,0 +1,12 @@
+BEGIN main
+    Get start
+    Get end
+
+    Let hours = 0
+    WHILE end > start
+        Let start = start + 0.6*start
+        Increment hours
+    ENDWHILE
+
+    Display "The loaf would need to rise for " + hours + " hours."
+END main

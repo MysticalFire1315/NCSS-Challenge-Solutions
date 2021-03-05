@@ -1,0 +1,28 @@
+BEGIN main
+    Display "Let's get planting everyone!"
+    Get flower
+    REPEAT
+        Get freq
+        IF BinarySearch(flower_list, flower) <> Error:
+            Let flower_dict[BinarySearch(flower_list, flower)][2] = flower_dict[BinarySearch(flower_list, flower)][2] + freq
+            Display "Fantastic! We just planted " + freq + " more " + flower + "s!"
+        ELSE
+            Let flower_dict[length of flower_dict+1] = [flower, freq]
+            Let flower_list[length of flower_list+1] = flower
+            Let flower_freq[length of flower_freq+1] = freq
+            Display "Our first " + flower + "s! We just planted " + freq + " of them!"
+        ENDIF
+        Get flower
+    UNTIL flower = ""
+
+    Let total = Sum(flower_freq)
+    Display "Nice work, everyone! We planted " + total + " flowers!"
+
+    Display "These are all the kinds of flowers we planted today: "
+    IF flower_dict <> [] THEN
+        Let flower_list = BubbleSort(flower_list)
+        FOR index = 1 TO length of flower_list STEP 1
+            Display "🏵️ " + flower_list[index]
+        NEXT index
+    ENDIF
+END main

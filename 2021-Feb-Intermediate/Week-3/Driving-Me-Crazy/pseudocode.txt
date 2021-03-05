@@ -1,0 +1,9 @@
+BEGIN main
+    Display "Let's go!"
+    Get arrival
+    WHILE "yes" not in arrival as lowercase
+        Display "Aww..."
+        Get arrival
+    ENDWHILE
+    Display "Hooray!!!"
+END main

@@ -1,0 +1,15 @@
+BEGIN to_kmh(knots)
+    Return (1.852*knots) rounded to 1 decimal place
+END to_kmh
+
+BEGIN Main
+    Get speed
+    Let speed = to_kmh(speed)
+
+    CASEWHERE speed is
+        <60: Display speed + " km/h - Go faster!"
+        <100: Display speed + " km/h - Nice one."
+        <120: Display speed + " km/h - Radical!"
+        OTHERWISE: Display speed + " km/h - Whoa! Slow down!"
+    ENDCASE
+END Main
