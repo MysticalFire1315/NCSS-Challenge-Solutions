@@ -1,0 +1,9 @@
+BEGIN Main
+    Get beds
+    Display "The groups that fit are:"
+    FOR index TO length of group_name STEP 1
+        IF beds >= group_size[index] THEN
+            Display group_name[index]
+        ENDIF
+    NEXT index
+END Main

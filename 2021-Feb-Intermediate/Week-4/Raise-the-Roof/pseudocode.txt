@@ -1,0 +1,23 @@
+BEGIN Main()
+    FOR loop = 1 TO 5 STEP 1
+        Let new_bread = false
+        REPEAT
+            Get name
+            Get bread
+            Let found = BinarySearch(bread, bread_names)
+            IF found = Error THEN
+                bread_names[length of bread_names +1] = bread
+                name_list[length of name_list +1] = name
+                Display name " is bringing a " bread "!"
+                Let new_bread = true
+            ELSE
+                Display "Someone else is bringing that already."
+            ENDIF
+        UNTIL new_bread = true
+    NEXT loop
+
+    Display "The party is organised! Here's what's on the menu:"
+    FOR index = 1 TO length of name_list STEP 1
+        Display bread_names[index] ": " name_list[index]
+    NEXT index
+END Main

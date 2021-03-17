@@ -1,0 +1,9 @@
+BEGIN Main
+    Get word
+    Let found = BinarySearch(keys, word as lowercase)
+    IF found <> error THEN
+        Display values[found]
+    ELSE
+        Display "Not in the dictionary!"
+    ENDIF
+END Main
