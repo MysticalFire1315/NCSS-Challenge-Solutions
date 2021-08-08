@@ -29,3 +29,21 @@ Activities are ordered the same was as they show up in the challenge.
     - [*State of the Art*](Week-3/State-of-the-Art/readme.md)
     - [*Cabbage Cup*](Week-3/Cabbage-Cup/readme.md)
     - [*Gnome Renovation*](Week-3/Gnome-Renovation/readme.md)
+
+### Week 4
+- **Part 1**
+    - [*Sesquipedalian Education*](Week-4/Sesquipedalian-Education)
+    - [*Happy Campers*](Week-4/Happy-Campers)
+- **Part 2**
+    - [*Raise the Roof*](Week-4/Raise-the-Roof)
+    - [*Travelling Meowchant*](Week-4/Travelling-Meowchant)
+    - [*Your Ticket to Fun!*](Week-4/Your-Ticket-to-Fun)
+
+### Week 5
+- **Part 1**
+    - [*Monter Mash*](Week-5/Monster-Mash)
+    - [*Peculiar Puzzle*](Week-5/Peculiar-Puzzle)
+- **Part 2**
+    - [*Nom-nom-nomination*](Week-5/Nom-nom-nomination)
+    - [*MorseChat*](Week-5/MorseChat)
+    - [*Meatn't*](Week-5/Meatn't)
