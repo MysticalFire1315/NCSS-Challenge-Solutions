@@ -23,3 +23,10 @@ Activities are ordered the same was as they show up in the challenge.
   3. [*Rational Numbers*](week_3/rational_numbers)
   4. [*Forum of the Roman Republic*](week_3/forum_of_the_roman_republic)
   5. [*Calculator Printer*](week_3/calculator_printer)
+
+### Week 4
+  1. [*The Cover of Knight*](week_4/the_cover_of_knight)
+  2. [*Interleavings*](week_4/interleavings)
+  3. [*Predicting Text*](week_4/predicting_text)
+  4. [*Pac Man (i)*](week_4/pac_man_i)
+  5. [*Expand This!*](week_4/expand_this)
