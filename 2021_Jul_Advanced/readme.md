@@ -28,5 +28,9 @@ Activities are ordered the same was as they show up in the challenge.
   1. [*The Cover of Knight*](week_4/the_cover_of_knight)
   2. [*Interleavings*](week_4/interleavings)
   3. [*Predicting Text*](week_4/predicting_text)
-  4. [*Pac Man (i)*](week_4/pac_man_i)
+  4. [*Pac Man (I)*](week_4/pac_man_i)
   5. [*Expand This!*](week_4/expand_this)
+
+### Week 5
+  1. [*Patches of Paint*](week_5/patches_of_paint)
+  2. [*Unmasked*](week_5/unmasked)

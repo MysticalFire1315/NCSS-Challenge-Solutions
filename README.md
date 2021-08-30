@@ -2,6 +2,10 @@
 Solutions for NCSS Challenge (Grok Learning)
 
 ## Changelog
+### 29th August 2021
+[2021 July Advanced](2021_Jul_Advanced) => Week 5 (Part 1-2) solutions out now!
+> Busy this week, didn't finish them all. Will upload the rest soon...
+
 ### 22nd August 2021
 [2021 July Advanced](2021_Jul_Advanced) => Week 4 solutions out now!
 
