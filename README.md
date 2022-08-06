@@ -1,7 +1,13 @@
 # NCSS-Challenge-Solutions
 Solutions for NCSS Challenge (Grok Learning)
 
+| :warning: WARNING: This repo is now archived. |
+|:----------------------------------------------|
+
 ## Changelog
+### 6th August 2022
+Repository archived.
+
 ### 29th August 2021
 [2021 July Advanced](2021_Jul_Advanced) => Week 5 (Part 1-2) solutions out now!
 > Busy this week, didn't finish them all. Will upload the rest soon...
